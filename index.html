@@ -32,6 +32,31 @@
             <h2>Публикации</h2>
     
             <!-- Поле живого поиска -->
+            <!-- Форма добавления статьи -->
+            <form id="addArticleForm" class="article-form">
+                <h3 id="formHeading">Добавить новую публикацию</h3>
+
+                <div class="form-group">
+                    <label for="postTitle">Заголовок статьи:</label>
+                    <input type="text" id="postTitle" required
+                           placeholder="Например: Свойства льняных тканей">
+                </div>
+
+                <div class="form-group">
+                    <label for="postText">Текст статьи:</label>
+                    <textarea id="postText" rows="4" required
+                              placeholder="Опишите волокно, его происхождение или область применения..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="postTags">Теги (через пробел):</label>
+                    <input type="text" id="postTags"
+                           placeholder="Например: #лён #гигроскопичность #ткани">
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Опубликовать статью</button>
+                <button type="button" class="cancel-btn" id="cancelEditBtn" style="display: none;">Отмена</button>
+            </form>
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Введите название статьи или тег для поиска...">
             </div>
